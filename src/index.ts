@@ -1,3 +1,4 @@
 const x = 'hello';
+const y = 'world';
 
-export { x };
+export { x, y };
