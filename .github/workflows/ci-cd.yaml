@@ -63,3 +63,4 @@ jobs:
             -Dsonar.test.inclusions=**/*.test.ts
             -Dsonar.qualitygate.wait=true
             -Dsonar.javascript.coveragePlugin=lcov
+            -Dsonar.newCode.referenceBranch=HEAD~1
