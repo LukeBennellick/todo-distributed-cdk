@@ -1,8 +1,8 @@
 {
-  "name": "my-cdk-project",
+  "name": "todo-app-project",
   "version": "0.1.0",
   "bin": {
-    "my-cdk-project": "bin/my-cdk-project.js"
+    "todo-app-project": "bin/todo-app-project.js"
   },
   "scripts": {
     "build": "tsc",
