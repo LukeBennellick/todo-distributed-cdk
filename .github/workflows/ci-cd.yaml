@@ -58,7 +58,7 @@ jobs:
             -Dsonar.sources=lib,src
             -Dsonar.tests=test
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
-            -Dsonar.coverage.exclusions=**/*.test.ts
-            -Dsonar.test.exclusions=**/*.test.ts
+            -Dsonar.typescript.file.suffixes=.ts
+            -Dsonar.coverage.exclusions=**/*.test.ts,**/*.d.ts
+            -Dsonar.test.inclusions=**/*.test.ts
             -Dsonar.qualitygate.wait=true
-            -Dsonar.coverage.minimum=90

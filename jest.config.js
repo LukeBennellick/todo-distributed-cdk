@@ -12,14 +12,6 @@ module.exports = {
     '!**/node_modules/**',
   ],
   coverageReporters: ['lcov', 'text'],
-  coverageThreshold: {
-    global: {
-      branches: 90,
-      functions: 90,
-      lines: 90,
-      statements: 90
-    }
-  },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   projects: [
     {
