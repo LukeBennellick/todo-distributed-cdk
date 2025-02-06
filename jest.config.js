@@ -5,6 +5,8 @@ module.exports = {
   transform: {
     '^.+\\.tsx?$': 'ts-jest'
   },
+  collectCoverage: true,
+  coverageReporters: ['lcov', 'text'],
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   projects: [
     {

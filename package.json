@@ -11,13 +11,6 @@
     "test:infrastructure": "jest --selectProjects infrastructure",
     "cdk": "cdk"
   },
-  "jest": {
-    "collectCoverage": true,
-    "coverageReporters": [
-      "lcov",
-      "text"
-    ]
-  },
   "devDependencies": {
     "@types/jest": "^29.5.14",
     "@types/node": "22.7.9",
