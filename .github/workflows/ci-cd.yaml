@@ -27,6 +27,9 @@ jobs:
       - name: Run tests with coverage
         run: npm test -- --coverage
 
+      - name: Debug Coverage File
+        run: ls -l coverage && cat coverage/lcov.info
+
   sonarcloud:
     name: SonarCloud Analysis
     needs: tests
@@ -47,7 +50,7 @@ jobs:
       - name: Run tests with coverage
         run: npm test -- --coverage
         
-   - name: SonarCloud Scan
+      - name: SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@v4
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
