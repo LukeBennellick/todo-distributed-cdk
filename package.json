@@ -8,7 +8,15 @@
     "build": "tsc",
     "watch": "tsc -w",
     "test": "jest",
+    "test:infrastructure": "jest --selectProjects infrastructure",
     "cdk": "cdk"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "coverageReporters": [
+      "lcov",
+      "text"
+    ]
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
