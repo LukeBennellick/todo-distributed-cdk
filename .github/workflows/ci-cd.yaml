@@ -47,7 +47,7 @@ jobs:
       - name: Run tests with coverage
         run: npm test -- --coverage
         
-      - name: SonarQube Scan
+      - name: SonarCloud Scan
         uses: SonarSource/sonarqube-scan-action@v4
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
@@ -59,6 +59,7 @@ jobs:
             -Dsonar.tests=test
             -Dsonar.javascript.lcov.reportPaths=coverage/lcov.info
             -Dsonar.typescript.file.suffixes=.ts
-            -Dsonar.coverage.exclusions=**/*.test.ts,**/*.d.ts
+            -Dsonar.coverage.exclusions=**/*.test.ts,**/*.d.ts,**/jest.config.ts
             -Dsonar.test.inclusions=**/*.test.ts
             -Dsonar.qualitygate.wait=true
+            -Dsonar.javascript.coveragePlugin=lcov
